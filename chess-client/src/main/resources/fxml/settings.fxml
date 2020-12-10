@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="600.0" prefWidth="800.0"
+          xmlns="http://javafx.com/javafx/11.0.1" fx:controller="nl.nickthijssen.chessclient.ui.SettingsController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <VBox alignment="CENTER" spacing="20.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <children>
+                        <Label prefWidth="250.0" text="Player Name">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtPlayerName" prefWidth="400.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <children>
+                        <Label prefWidth="250.0" text="AuthenticationServer URL">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtAuthServerURL" prefWidth="400.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" spacing="20.0">
+                    <children>
+                        <Label prefWidth="250.0" text="Game Server URL">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtGameServerURL" prefWidth="400.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="40.0" layoutY="268.0">
+                    <children>
+                        <ToggleButton fx:id="btnDarkTheme" mnemonicParsing="false" onMouseClicked="#btnDarkThemeClicked"
+                                      prefWidth="200.0" text="Dark Theme">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </ToggleButton>
+                        <ToggleButton fx:id="btnLightTheme" mnemonicParsing="false"
+                                      onMouseClicked="#btnLightThemeClicked" prefWidth="200.0" text="Light Theme">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </ToggleButton>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="20.0">
+                    <children>
+                        <Button fx:id="btnConfirmSettings" mnemonicParsing="false"
+                                onMouseClicked="#btnConfirmSettingsClicked" prefWidth="200.0" text="Confirm Settings">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+            </padding>
+        </VBox>
+    </children>
+</GridPane>

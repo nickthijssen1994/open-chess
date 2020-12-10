@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" prefHeight="600.0" prefWidth="800.0"
+          xmlns="http://javafx.com/javafx/11.0.1" fx:controller="nl.nickthijssen.chessclient.ui.AccountController">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="50.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="50.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="80.0" vgrow="SOMETIMES"/>
+        <RowConstraints percentHeight="20.0" valignment="CENTER" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <VBox alignment="TOP_CENTER" spacing="20.0">
+            <children>
+                <Label text="Register">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtRegisterUsername" promptText="username">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="txtRegisterEmail" promptText="email">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="txtRegisterPassword" promptText="password">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </PasswordField>
+                <PasswordField fx:id="txtRegisterConfirmPassword" promptText="confirm password">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </PasswordField>
+                <Button fx:id="btnRegister" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                        onMouseClicked="#btnRegisterClicked" text="Register">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+            <GridPane.margin>
+                <Insets/>
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+            </padding>
+        </VBox>
+        <VBox alignment="TOP_CENTER" spacing="20.0" GridPane.columnIndex="1">
+            <children>
+                <Label text="Login">
+                    <font>
+                        <Font size="24.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="txtLoginUsername" promptText="username">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="txtLoginPassword" promptText="password">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </PasswordField>
+                <Button fx:id="btnLogin" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                        onMouseClicked="#btnLoginClicked" text="Login">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="btnLoginWithGitHub" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                        onMouseClicked="#btnLoginWithGitHubClicked" text="Login With GitHub">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnCheckAuthentication" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                        onMouseClicked="#btnCheckAuthenticationClicked" text="Check Authentication">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+            <GridPane.margin>
+                <Insets/>
+            </GridPane.margin>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+            </padding>
+        </VBox>
+        <Button fx:id="btnBackToMenu" mnemonicParsing="false" onMouseClicked="#btnBackToMenuClicked" text="Back To Menu"
+                GridPane.columnSpan="2" GridPane.rowIndex="1">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </children>
+</GridPane>
